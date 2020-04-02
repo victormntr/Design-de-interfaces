@@ -44,7 +44,7 @@
 		  <input type="password" id="senha" class="form-control" placeholder="Senha" required>
 		  
 		  <a href="${pageContext.request.contextPath}/" onclick="valida()" class="btn btn-lg btn-primary btn-block" type="button">Logar</a>
-		  <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+		  <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
 	</form>
 </body>
 
@@ -58,7 +58,7 @@ const valida = () => {
 	    alert('Campos obrigatórios não preenchidos!');
     }
 	else if(email === "victormntr268@gmail.com" && senha === "1234"){
-    	location.href='http://localhost:8081/agenda-acme/admin/dashboard/index.jsp';
+    	location.href='http://localhost:8080/agenda-acme/admin/dashboard/index.jsp';
     }
     else{
         alert("Usuário ou senha inválidos, tente novamente...")
