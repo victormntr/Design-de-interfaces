@@ -56,7 +56,8 @@ function excluir_Banco(value){
 	for(var i = 0; i < localStorage.length;i++){
 		var usuario = JSON.parse(localStorage.getItem(i));
 		if(id != null && id == i){
-		localStorage.removeItem(i);
+			alert("Deseja realmente excluir o usuário?");
+			localStorage.removeItem(i);
 		}
 	}
 	window.location.reload()	

@@ -32,7 +32,7 @@ document.getElementById("btnlistar").addEventListener("click",function(){
 		
 		var usuario = JSON.parse(localStorage.getItem(i));
 		if(usuario != null && usuario.modificado === true){
-			alert(usuario.modificado);
+			alert("Deseja realmente sair sem modificar?);
 		
 		 usuario.modificado = false;
 		 localStorage.setItem(i,JSON.stringify(usuario));
